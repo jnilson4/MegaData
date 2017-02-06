@@ -24,7 +24,7 @@ bg=magenta</panel_attributes>
     <panel_attributes>IntNode
 --
 - nodeData : int
-- nodePoints : IntNode *
+- nodePointer : IntNode *
 --
 + getNodeData() : int
 + getNodePointer() : IntNode *
