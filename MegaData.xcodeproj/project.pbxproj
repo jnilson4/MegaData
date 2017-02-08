@@ -10,6 +10,7 @@
 		7F12E1D61E490F0800101CB0 /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F12E1D41E490F0800101CB0 /* IntNode.cpp */; };
 		7FB3E3461E4BA9AC006346D3 /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3E3441E4BA9AC006346D3 /* IntNodeArray.cpp */; };
 		7FB3E3491E4BB20F006346D3 /* DataStructureController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3E3471E4BB20F006346D3 /* DataStructureController.cpp */; };
+		7FB3E34B1E4BB6C6006346D3 /* NodeRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3E34A1E4BB6C6006346D3 /* NodeRunner.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 		7FB3E3451E4BA9AC006346D3 /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = Model/IntNodeArray.hpp; sourceTree = "<group>"; };
 		7FB3E3471E4BB20F006346D3 /* DataStructureController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataStructureController.cpp; path = Controller/DataStructureController.cpp; sourceTree = "<group>"; };
 		7FB3E3481E4BB20F006346D3 /* DataStructureController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DataStructureController.hpp; path = Controller/DataStructureController.hpp; sourceTree = "<group>"; };
+		7FB3E34A1E4BB6C6006346D3 /* NodeRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NodeRunner.cpp; path = Controller/NodeRunner.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			children = (
 				7FB3E3471E4BB20F006346D3 /* DataStructureController.cpp */,
 				7FB3E3481E4BB20F006346D3 /* DataStructureController.hpp */,
+				7FB3E34A1E4BB6C6006346D3 /* NodeRunner.cpp */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				7F12E1D61E490F0800101CB0 /* IntNode.cpp in Sources */,
 				7FB3E3491E4BB20F006346D3 /* DataStructureController.cpp in Sources */,
 				7FB3E3461E4BA9AC006346D3 /* IntNodeArray.cpp in Sources */,
+				7FB3E34B1E4BB6C6006346D3 /* NodeRunner.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
