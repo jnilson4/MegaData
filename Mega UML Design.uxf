@@ -4,8 +4,8 @@
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>20</x>
-      <y>20</y>
+      <x>60</x>
+      <y>0</y>
       <w>180</w>
       <h>40</h>
     </coordinates>
@@ -16,8 +16,8 @@ bg=magenta</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>20</x>
-      <y>80</y>
+      <x>60</x>
+      <y>60</y>
       <w>430</w>
       <h>210</h>
     </coordinates>
@@ -36,6 +36,26 @@ bg=magenta</panel_attributes>
 + IntNode(int value4, IntNode * nextNode) : constructor
 
 bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>290</y>
+      <w>320</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>IntNodeArray
+--
+- size : int
+- front : intNode *
+--
++ IntNodeArray(int size) : constructor
++ setAtIndex(int index, int value) : void
++ getFromIndex(int index) : int
++ getSize() : int
+bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
