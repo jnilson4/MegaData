@@ -28,7 +28,7 @@ public:
     IntNode * getNodePointer();
     
     void setNodeData(int value);
-    void setNotePointer(IntNode * next);
+    void setNodePointer(IntNode * next);
 };
 
 #endif /* IntNode_hpp */
