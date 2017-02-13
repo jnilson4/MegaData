@@ -29,6 +29,7 @@
 		7F12E1C81E49046400101CB0 /* MegaData */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaData; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F12E1D41E490F0800101CB0 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = "<group>"; };
 		7F12E1D51E490F0800101CB0 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
+		7F92E4251E523E8F002413DB /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Node.hpp; path = Model/Node.hpp; sourceTree = "<group>"; };
 		7FB3E3441E4BA9AC006346D3 /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNodeArray.cpp; path = Model/IntNodeArray.cpp; sourceTree = "<group>"; };
 		7FB3E3451E4BA9AC006346D3 /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = Model/IntNodeArray.hpp; sourceTree = "<group>"; };
 		7FB3E3471E4BB20F006346D3 /* DataStructureController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataStructureController.cpp; path = Controller/DataStructureController.cpp; sourceTree = "<group>"; };
@@ -89,6 +90,7 @@
 				7F12E1D51E490F0800101CB0 /* IntNode.hpp */,
 				7FB3E3441E4BA9AC006346D3 /* IntNodeArray.cpp */,
 				7FB3E3451E4BA9AC006346D3 /* IntNodeArray.hpp */,
+				7F92E4251E523E8F002413DB /* Node.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
