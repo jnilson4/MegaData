@@ -118,4 +118,30 @@ fg=red
 group=2</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>460</y>
+      <w>450</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>Array&lt;Type&gt;
+--
+Data Members
+
+- front : Node&lt;Type&gt; *
+- size : int
+--
+Constructors
++ Array() : constructor
++ Array(int size) : constructor
+
+Methods
++ getSize() : int
++ setAtIndex(int index, Type value) : void
++ getFromIndex(int index) : Type
+bg=#800080</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
