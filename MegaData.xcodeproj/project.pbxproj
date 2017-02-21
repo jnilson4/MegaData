@@ -31,6 +31,7 @@
 		7F12E1D51E490F0800101CB0 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
 		7F7687AE1E54E3540064DF7C /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Array.hpp; path = Model/Array.hpp; sourceTree = "<group>"; };
 		7F89ABA91E5CC2BF004EA531 /* Mega UML Design.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Mega UML Design.pdf"; sourceTree = "<group>"; };
+		7F89ABAA1E5CD97E004EA531 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = List.hpp; path = Model/List.hpp; sourceTree = "<group>"; };
 		7F92E4251E523E8F002413DB /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Node.hpp; path = Model/Node.hpp; sourceTree = "<group>"; };
 		7FB3E3441E4BA9AC006346D3 /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNodeArray.cpp; path = Model/IntNodeArray.cpp; sourceTree = "<group>"; };
 		7FB3E3451E4BA9AC006346D3 /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = Model/IntNodeArray.hpp; sourceTree = "<group>"; };
@@ -95,6 +96,7 @@
 				7FB3E3451E4BA9AC006346D3 /* IntNodeArray.hpp */,
 				7F92E4251E523E8F002413DB /* Node.hpp */,
 				7F7687AE1E54E3540064DF7C /* Array.hpp */,
+				7F89ABAA1E5CD97E004EA531 /* List.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";

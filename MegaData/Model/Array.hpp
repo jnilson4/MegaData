@@ -129,7 +129,7 @@ Array<Type> :: Array(const Array<Type> & toBeCopied)
     this->size = toBeCopied.getSize();
     
     //Build Data Structure
-    this-front = new Node<Type>();
+    this->front = new Node<Type>();
     for(int index = 1; index < size; index++)
     {
         Node<Type> * temp = new Node<Type>();
