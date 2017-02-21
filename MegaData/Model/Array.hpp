@@ -11,6 +11,8 @@
 
 #include "Node.hpp"
 #include <assert.h>
+#include <iostream>
+using namespace std;
 
 template <class Type>
 class Array
@@ -28,7 +30,7 @@ public:
     Array<Type>(const Array<Type> & toBeCopied);
     
     //Helper Methods
-    int getSize();
+    int getSize() const;
     Node<Type> * getFront() const;
     
     void setAtIndex(int index, Type value);
@@ -55,29 +57,29 @@ Array<Type> :: Array(int size)
     
     for(int index = 1; index < size; index++)
     {
-        Node<Type>() * current = new Node<Type>();
+        Node<Type> * current = new Node<Type>();
         current->setNodePointer(front);
         front = current;
     }
 }
 
 template <class Type>
-Array<Type> :: setAtIndex(int index, Type data)
+void Array<Type> :: setAtIndex(int index, Type data)
 {
     assert(index >= 0 && index < size);
     
-    Node<Type>() * current = front;
+    Node<Type> * current = front;
     
     for(int spot = 0; spot < index; spot++)
     {
         current = current->getNodePointer();
     }
     
-    current->setNodeData(value);
+    current->setNodeData(data);
 }
 
 template <class Type>
-Array<Type> :: getFromIndex(int index)
+Type Array<Type> :: getFromIndex(int index)
 {
     assert(index >= 0 && index < size);
     
@@ -95,7 +97,7 @@ Array<Type> :: getFromIndex(int index)
 }
 
 template <class Type>
-Array<Type> :: getSize() const
+int Array<Type> :: getSize() const
 {
     return size;
 }
@@ -105,7 +107,7 @@ Array<Type> :: ~Array()
 {
     int count = size;
     Node<Type> * remove = front;
-    while(front != mullptr)
+    while(front != nullptr)
     {
         //Move to the next node in array.
         front = front->getNodePointer();

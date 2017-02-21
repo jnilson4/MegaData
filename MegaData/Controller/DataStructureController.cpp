@@ -36,6 +36,12 @@ void DataStructureController :: start()
     cout << "Finished Testing" << endl;
 }
 
+void DataStructureController :: testAdvancedFeatures()
+{
+//    int showDestructor = 0;
+    
+}
+
 void DataStructureController :: testIntArray()
 {
     cout << "Testing the array" << endl;
