@@ -4,20 +4,21 @@
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>30</x>
-      <y>10</y>
+      <x>20</x>
+      <y>20</y>
       <w>180</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>Created by Jake Nilson
+Updated 2/21/17
 bg=magenta</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>60</x>
-      <y>150</y>
+      <x>50</x>
+      <y>160</y>
       <w>430</w>
       <h>210</h>
     </coordinates>
@@ -42,8 +43,8 @@ group=2</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>570</x>
-      <y>170</y>
+      <x>560</x>
+      <y>180</y>
       <w>320</w>
       <h>180</h>
     </coordinates>
@@ -63,8 +64,8 @@ group=2</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>30</x>
-      <y>460</y>
+      <x>20</x>
+      <y>470</y>
       <w>460</w>
       <h>300</h>
     </coordinates>
@@ -93,21 +94,21 @@ bg=red</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>480</x>
-      <y>240</y>
+      <x>470</x>
+      <y>250</y>
       <w>110</w>
-      <h>30</h>
+      <h>40</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
-group=2</panel_attributes>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1..n</panel_attributes>
     <additional_attributes>70.0;10.0;90.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>30</x>
-      <y>70</y>
-      <w>960</w>
+      <x>20</x>
+      <y>80</y>
+      <w>980</w>
       <h>370</h>
     </coordinates>
     <panel_attributes>Typed Sample
@@ -121,10 +122,10 @@ group=2</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>540</x>
-      <y>460</y>
-      <w>450</w>
-      <h>300</h>
+      <x>550</x>
+      <y>470</y>
+      <w>500</w>
+      <h>360</h>
     </coordinates>
     <panel_attributes>Array&lt;Type&gt;
 --
@@ -137,11 +138,31 @@ Constructors
 + Array() : constructor
 + Array(int size) : constructor
 
+Advanced
+
++ ~Array&lt;Type&gt;() : destructor
++ Array&lt;Type&gt;(const Array&lt;Type&gt; &amp; toBeCopied) : copy constructor
+
 Methods
+
 + getSize() : int
++ getFront() const : Node&lt;Type&gt; *
+
 + setAtIndex(int index, Type value) : void
 + getFromIndex(int index) : Type
 bg=#800080</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>470</x>
+      <y>610</y>
+      <w>100</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1..n</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
