@@ -177,19 +177,22 @@ m2=1..n</panel_attributes>
 --
 - size : int
 - front : Node&lt;Type&gt;*
+- end : Node&lt;Type&gt;*
 --
 + List&lt;Type&gt;() : constructor
 + List&lt;Type&gt;(const List&lt;Tlype&gt; &amp; source) : copy constructor
 + ~List&lt;Type&gt;() : destructor
 
 + addAtIndex(int index, Type value) : void
-+ add(Type value) : void
++ addFront(Type value) : void
++ addEnd(Type value) : void
 + remove(int index) : Type
 + setAtIndex(int index, Type data) : Type
 + getFromIndex(int index) : Type
 + contains(Type data) : bool
 + getSize() const : int
 + getFront() const : Node&lt;Type&gt; *
++ getEnd() const : Node&lt;Type&gt;*
 bg=orange</panel_attributes>
     <additional_attributes/>
   </element>
