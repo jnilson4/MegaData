@@ -26,6 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7F019A691E64C70400C84898 /* BiDirectionalNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BiDirectionalNode.hpp; path = Model/BiDirectionalNode.hpp; sourceTree = "<group>"; };
 		7F12E1C81E49046400101CB0 /* MegaData */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaData; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F12E1D41E490F0800101CB0 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = "<group>"; };
 		7F12E1D51E490F0800101CB0 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
@@ -97,6 +98,7 @@
 				7F92E4251E523E8F002413DB /* Node.hpp */,
 				7F7687AE1E54E3540064DF7C /* Array.hpp */,
 				7F89ABAA1E5CD97E004EA531 /* List.hpp */,
+				7F019A691E64C70400C84898 /* BiDirectionalNode.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
