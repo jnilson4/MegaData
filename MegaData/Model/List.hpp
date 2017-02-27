@@ -12,7 +12,7 @@
 #include "Node.hpp"
 #include <assert.h>
 
-using namespace std
+using namespace std;
 
 template <class Type>
 class List
@@ -20,17 +20,18 @@ class List
 private:
     int size;
     Node<Type> * front;
+    Node<Type> * end;
 public:
     List<Type>();
-    List<Type>(cont List<Type> & source);
+//    List<Type>(const List<Type> & source);
     ~List<Type>();
     
     void addAtIndex(int index, Type value);
     void addFront(Type value);
     void addEnd(Type value);
     Type remove(int index);
-    Type setAtIndex(ind index, Type data);
-    Type getFromIndex(ind index);
+    Type setAtIndex(int index, Type data);
+    Type getFromIndex(int index);
     bool contains(Type data);
     int getSize() const;
     Node<Type> * getFront() const;
@@ -42,22 +43,6 @@ List<Type> :: List()
     this->size = 0;
     this->front = nullptr;
     this->end = nullptr;
-}
-
-template <class Type>
-List<Type> :: List(int size)
-{
-    assert(size > 0);
-    
-    this->size = size;
-    this->front = new Node<Type>();
-    
-    for(int index = 1; index < size; index++)
-    {
-        Node<Type> * current = new Node<Type>();
-        current->setNodePointer(front);
-        front=current;
-    }
 }
 
 template <class Type>
@@ -78,6 +63,7 @@ void List<Type> :: addFront(Type value)
         //Node<Type> * newFirst = new Node<Type>(value, front);
         this->front = newFirst;
     }
+    size++;
 }
 
 template <class Type>
@@ -140,15 +126,16 @@ Type List<Type> :: setAtIndex(int index, Type data)
         current = current->getNodePointer();
     }
     
-    value = current->getNodeData();
+    removedData = current->getNodeData();
+    current->setNodeData(data);
     
-    return value;
+    return removedData;
 }
 
 template <class Type>
-Type List<Type> :; getFromIndex(int index)
+Type List<Type> :: getFromIndex(int index)
 {
-    assert(index >= && index < size);
+    assert(index >= 0 && index < size);
     Type information;
     
     Node<Type> * current = front;
@@ -229,7 +216,7 @@ bool List<Type> :: contains(Type findMe)
 }
 
 template <class Type>
-List<Type> :: getSize() const
+int List<Type> :: getSize() const
 {
     return size;
 }
