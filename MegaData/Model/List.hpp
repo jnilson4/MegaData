@@ -37,9 +37,11 @@ public:
 };
 
 template <class Type>
-List<Type> :: List<Type>()
+List<Type> :: List()
 {
-    
+    this->size = 0;
+    this->front = nullptr;
+    this->end = nullptr;
 }
 
 template <class Type>
@@ -58,7 +60,6 @@ List<Type> :: List(int size)
     }
 }
 
-//
 template <class Type>
 void List<Type> :: addFront(Type value)
 {
@@ -147,7 +148,18 @@ Type List<Type> :: setAtIndex(int index, Type data)
 template <class Type>
 Type List<Type> :; getFromIndex(int index)
 {
+    assert(index >= && index < size);
+    Type information;
     
+    Node<Type> * current = front;
+    for(int position = 0; position < index; position++)
+    {
+        current = current->getNodePointer();
+    }
+    
+    information = current->getNodeData();
+    
+    return information;
 }
 
 template <class Type>
@@ -201,9 +213,20 @@ Type List<Type> :: remove(int index)
 template <class Type>
 bool List<Type> :: contains(Type findMe)
 {
+    bool isInList = false;
+    Node<Type> * current = front;
     
+    for(int index = 0; index < size; index++)
+    {
+        if(current->getNodeData == findMe)
+        {
+            isInList = true;
+            return isInList;
+        }
+    }
+    
+    return isInList;
 }
-//
 
 template <class Type>
 List<Type> :: getSize() const
@@ -212,12 +235,15 @@ List<Type> :: getSize() const
 }
 
 template <class Type>
-List<Type> :: ~List<Type>()
+List<Type> :: ~List()
 {
-    
+    Node<Type> * destruction = front;
+    while(front != nullptr)
+    {
+        front = front->getNodePointer();
+        delete destruction;
+        destruction = front;
+    }
 }
-
-
-
 
 #endif /* List_h */
