@@ -30,6 +30,7 @@
 		7F12E1C81E49046400101CB0 /* MegaData */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaData; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F12E1D41E490F0800101CB0 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = "<group>"; };
 		7F12E1D51E490F0800101CB0 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
+		7F35760D1E675D310033E913 /* DoublyLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoublyLinkedList.hpp; path = Model/DoublyLinkedList.hpp; sourceTree = "<group>"; };
 		7F7687AE1E54E3540064DF7C /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Array.hpp; path = Model/Array.hpp; sourceTree = "<group>"; };
 		7F89ABA91E5CC2BF004EA531 /* Mega UML Design.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Mega UML Design.pdf"; sourceTree = "<group>"; };
 		7F89ABAA1E5CD97E004EA531 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = List.hpp; path = Model/List.hpp; sourceTree = "<group>"; };
@@ -91,16 +92,25 @@
 		7F12E1D31E49071F00101CB0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7F12E1D41E490F0800101CB0 /* IntNode.cpp */,
-				7F12E1D51E490F0800101CB0 /* IntNode.hpp */,
-				7FB3E3441E4BA9AC006346D3 /* IntNodeArray.cpp */,
-				7FB3E3451E4BA9AC006346D3 /* IntNodeArray.hpp */,
+				7F35760C1E675CC90033E913 /* Node */,
 				7F92E4251E523E8F002413DB /* Node.hpp */,
 				7F7687AE1E54E3540064DF7C /* Array.hpp */,
 				7F89ABAA1E5CD97E004EA531 /* List.hpp */,
 				7F019A691E64C70400C84898 /* BiDirectionalNode.hpp */,
+				7F35760D1E675D310033E913 /* DoublyLinkedList.hpp */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		7F35760C1E675CC90033E913 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				7F12E1D41E490F0800101CB0 /* IntNode.cpp */,
+				7F12E1D51E490F0800101CB0 /* IntNode.hpp */,
+				7FB3E3441E4BA9AC006346D3 /* IntNodeArray.cpp */,
+				7FB3E3451E4BA9AC006346D3 /* IntNodeArray.hpp */,
+			);
+			name = Node;
 			sourceTree = "<group>";
 		};
 		7F89ABA81E5CC2B1004EA531 /* Resources */ = {
