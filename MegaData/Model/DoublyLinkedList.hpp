@@ -19,6 +19,8 @@ private:
     BiDirectionalNode<Type> * end;
     int size;
 public:
+    virtual void add(Type data) = 0;
+    virtual Type remove(int index) = 0;
     DoublyLinkedList();
     virtual ~DoublyLinkedList();
     
@@ -26,8 +28,9 @@ public:
     BiDirectionalNode<Type> * getFront() const;
     BiDirectionalNode<Type> * getEnd() const;
 
-    virtual void add(Type data) = 0;
-    virtual Type remove(int index) = 0;
+    void setFront(BiDirectionalNode<Type> * front);
+    void setSize(int updated);
+    void setEnd(BiDirectionalNode<Type> * end);
 };
 
 template <class Type>
@@ -39,21 +42,45 @@ DoublyLinkedList<Type> :: DoublyLinkedList()
 }
 
 template <class Type>
+DoublyLinkedList<Type> :: ~DoublyLinkedList()
+{
+    
+}
+
+template <class Type>
 int DoublyLinkedList<Type> :: getSize()
 {
     return size;
 }
 
 template <class Type>
-BiDirectionalNode<Type> * DoublyLinkedList<Type> :: getFront()
+BiDirectionalNode<Type> * DoublyLinkedList<Type> :: getFront() const
 {
     return front;
 }
 
 template <class Type>
-BiDirectionalNode<Type> * DoublyLinkedList<Type> :: getEnd()
+BiDirectionalNode<Type> * DoublyLinkedList<Type> :: getEnd() const
 {
     return end;
+}
+
+template <class Type>
+void DoublyLinkedList<Type> :: setSize(int size)
+{
+    this->size = size;
+}
+
+template <class Type>
+void DoublyLinkedList<Type> :: setFront(BiDirectionalNode<Type> * front)
+{
+    this->front = front;
+}
+
+template <class Type>
+void DoublyLinkedList<Type> :: setEnd(BiDirectionalNode<Type> * end)
+{
+    this->end = end;
 }
 
 #endif /* DoublyLinkedList_h */
