@@ -143,8 +143,8 @@
 		7FF7F01D1E6A01ED00E15128 /* Typed Data Structures */ = {
 			isa = PBXGroup;
 			children = (
-				7F7687AE1E54E3540064DF7C /* Array.hpp */,
 				7F89ABAA1E5CD97E004EA531 /* List.hpp */,
+				7F7687AE1E54E3540064DF7C /* Array.hpp */,
 				7F35760D1E675D310033E913 /* DoublyLinkedList.hpp */,
 			);
 			name = "Typed Data Structures";
