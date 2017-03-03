@@ -58,4 +58,30 @@ void Queue<Type> :: enqueue(Type insertedValue)
     this->setEnd(added);
     this->setSize(this->getSize() + 1);
 }
+
+/*
+ Remove from the queue
+ Check valid index
+ call dequeue
+*/
+template <class Type>
+Type Queue<Type> :: remove(int index)
+{
+    assert(index == 0 && this->getSize() > 0);
+    return dequeue();
+}
+
+/*
+ Check size
+ 
+*/
+template <class Type>
+Type Queue<Type> :: dequeue()
+{
+    
+}
+
+
 #endif /* Queue_h */
+
+
