@@ -153,9 +153,9 @@
 		7FF7F01E1E6A020700E15128 /* Inherits from DoublyLinked */ = {
 			isa = PBXGroup;
 			children = (
-				7F35760E1E6768220033E913 /* CircularList.hpp */,
 				7FF7F01F1E6A026200E15128 /* DoubleList.hpp */,
 				7FF7F0201E6A026E00E15128 /* Stack.hpp */,
+				7F35760E1E6768220033E913 /* CircularList.hpp */,
 				7FF7F0211E6A027D00E15128 /* Queue.hpp */,
 			);
 			name = "Inherits from DoublyLinked";
