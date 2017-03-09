@@ -104,7 +104,7 @@ Type Queue<Type> :: dequeue()
     assert(this->getSize() > 0);
    
     Type removedValue = this->getFront()->getNodeData();
-    BiDirectionalNode<Type> * removeMe = front;
+    BiDirectionalNode<Type> * removeMe = this->getFront();
     
     if(this->getSize() == 1)
     {

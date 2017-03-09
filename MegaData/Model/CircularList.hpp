@@ -17,8 +17,8 @@ class CircularList : public DoublyLinkedList<Type>
 private:
     //No Need to redefine the private data members of DoublyLinkedList.
 public:
-    CirularList();
-    ~CirularList();
+    CircularList();
+    ~CircularList();
     
     void add(Type data);
     Type remove(int index);
@@ -26,7 +26,7 @@ public:
 };
 
 template <class Type>
-CircularList<Type> :: CircularList() : DoublyLinkedList()
+CircularList<Type> :: CircularList() : DoublyLinkedList<Type>()
 {
     //Deal with circle list stuff only here.
 }

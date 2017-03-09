@@ -24,7 +24,7 @@ public:
     DoublyLinkedList();
     virtual ~DoublyLinkedList();
     
-    int getSize() const
+    int getSize() const;
     BiDirectionalNode<Type> * getFront() const;
     BiDirectionalNode<Type> * getEnd() const;
 
@@ -48,7 +48,7 @@ DoublyLinkedList<Type> :: ~DoublyLinkedList()
 }
 
 template <class Type>
-int DoublyLinkedList<Type> :: getSize()
+int DoublyLinkedList<Type> :: getSize() const
 {
     return size;
 }

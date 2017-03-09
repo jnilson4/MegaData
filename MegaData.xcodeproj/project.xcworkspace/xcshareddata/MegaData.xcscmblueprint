@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "36D4A7709C306965F93508CA37A078F9AA39E1FA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "36D4A7709C306965F93508CA37A078F9AA39E1FA" : 9223372036854775807,
+    "48DEB831BFDF29873B3D904C1E2CF74ACE1FF71D" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0F1596CA-4961-4D37-9DCF-59A9404FA727",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "36D4A7709C306965F93508CA37A078F9AA39E1FA" : "MegaData\/",
+    "48DEB831BFDF29873B3D904C1E2CF74ACE1FF71D" : "FirstCPP\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MegaData",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MegaData.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jnilson4\/MegaData.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "36D4A7709C306965F93508CA37A078F9AA39E1FA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jnilson4\/FirstCPP.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "48DEB831BFDF29873B3D904C1E2CF74ACE1FF71D"
+    }
+  ]
+}
