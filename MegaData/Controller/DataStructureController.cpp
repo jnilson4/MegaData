@@ -21,11 +21,11 @@ DataStructureController :: DataStructureController()
 
 void DataStructureController :: start()
 {
-    cout << "Going to test the Array Template" << endl;
-    testAdvancedFeatures();
-    cout << "Finished template testing" << endl;
-    
-    testListIntro();
+//    cout << "Going to test the Array Template" << endl;
+//    testAdvancedFeatures();
+//    cout << "Finished template testing" << endl;
+//    
+//    testListIntro();
 }
 
 void DataStructureController :: testAdvancedFeatures()
@@ -94,13 +94,13 @@ void DataStructureController :: testListTiming()
     DoubleList<int> timingList;
     Timer totalTimer;
     totalTimer.startTimer();
-    for(int index = 0; index < 10000; index++)
+    for(int index = 0; index < 1000000; index++)
     {
         timingList.add(rand());
     }
     
-    long slowTime [1000];
-    long fastTime [1000];
+    long slowTime [10000];
+    long fastTime [10000];
     double averageSlow = 0.00, averageFast = 0.00;
     Timer doubleTimer;
     
@@ -123,8 +123,8 @@ void DataStructureController :: testListTiming()
         averageFast += fastTime[index];
     }
     
-    averageSlow += averageSlow/1000.00;
-    averageFast += averageFast/1000.00;
+    averageSlow += averageSlow/10000.00;
+    averageFast += averageFast/10000.00;
     totalTimer.stopTimer();
     
     cout << "The average speed for the getFromIndex method was: " << averageSlow << " microseconds." << endl;
