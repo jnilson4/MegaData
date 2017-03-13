@@ -57,7 +57,7 @@ void Queue<Type> :: add(Type value)
 template <class Type>
 Type Queue<Type> :: remove(int index)
 {
-    assert(index == 0 && this->getSize() > 0);
+    assert(index == this->getSize() - 1 && this->getSize() > 0);
     return dequeue();
 }
 
@@ -72,7 +72,7 @@ Type Queue<Type> :: remove(int index)
 template <class Type>
 void Queue<Type> :: enqueue(Type insertedValue)
 {
-    BiDirectionalNode<Type> * added = BiDirectionalNode<Type>(insertedValue);
+    BiDirectionalNode<Type> * added = new BiDirectionalNode<Type>(insertedValue);
     
     if(this->getSize() == 0 || this->getFront() == nullptr || this->getEnd() == nullptr)
     {
@@ -114,9 +114,10 @@ Type Queue<Type> :: dequeue()
     else
     {
         this->setFront(removeMe->getNextPointer());
+        this->getFront()->setPreviousPointer(nullptr);
     }
     delete removeMe;
-    this->getSize(this->getSize() - 1);
+    this->setSize(this->getSize() -1);
     
     return removedValue;
 }

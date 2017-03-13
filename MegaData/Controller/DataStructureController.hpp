@@ -18,6 +18,7 @@
 #include "../Model/Stack.hpp"
 #include "../Model/Queue.hpp"
 #include "../Model/CircularList.hpp"
+#include "../Model/FoodItem.hpp"
 #include <string>
 
 using namespace std;
@@ -26,14 +27,12 @@ class DataStructureController
 {
 private:
     void testIntArray();
-    void testNodeTypes();
-    void testArrayTemplate();
-    void testDestructor();
-    void testAdvancedFeatures();
+    void testIntStack();
+    void testFoodQueue();
+    void testFoodDouble();
+    void testFoodCircularList();
     void testListIntro();
-    void testDoubleLists();
     void testListTiming();
-    void testStack();
 public:
     DataStructureController();
     void start();

@@ -14,39 +14,13 @@ using namespace std;
 
 DataStructureController :: DataStructureController()
 {
-    cout << "Going to test the Timing of DoubleList" << endl;
-    testListTiming();
-    cout << "Finished testing." << endl;
+    
 }
 
 void DataStructureController :: start()
 {
-//    cout << "Going to test the Array Template" << endl;
-//    testAdvancedFeatures();
-//    cout << "Finished template testing" << endl;
-//    
-//    testListIntro();
-}
-
-void DataStructureController :: testAdvancedFeatures()
-{
-    int showDestructor = 0;
-    
-    if(showDestructor < 1)
-    {
-        Array<string> words = Array<string>(5);
-        cout << "There should be messaged about destructor next." << endl;
-    }
-    Array<string> words = Array<string>(4);
-    words.setAtIndex(0, "at zero");
-    words.setAtIndex(3, "in the last spot");
-    Array<string> copiedWords = Array<string>(words);
-    
-    cout << "These should match:" << endl;
-    cout << words.getFromIndex(0) << "should be the same as " << copiedWords.getFromIndex(0) << endl;
-    
-    copiedWords.setAtIndex(3, "Changed the contents of the copied Array");
-    
+    testIntStack();
+    testFoodQueue();
 }
 
 void DataStructureController :: testIntArray()
@@ -73,7 +47,56 @@ void DataStructureController :: testIntArray()
     }
 }
 
-void DataStructureController :: testStack()
+void DataStructureController :: testIntStack()
+{
+    Stack<int> numberStack;
+    numberStack.add(2315);
+    numberStack.push(9999);
+    int testValue = numberStack.pop();
+    
+    cout << "Test value is: " << testValue << " and should be 9999." << endl;
+    
+    numberStack.add(1);
+    numberStack.add(32);
+    numberStack.add(87);
+    
+    cout << "The size of the stack is: " << numberStack.getSize() << " and should be 4." << endl;
+    
+    numberStack.peek();
+    numberStack.remove(3);
+}
+
+void DataStructureController :: testFoodQueue()
+{
+    Queue<FoodItem> tastyFood;
+    FoodItem generalTaos("Delicious Chinese Chicken Dish");
+    FoodItem ramen("Ramen");
+    FoodItem macNCheese("Delicious pasta with cheese.");
+    FoodItem soup("Chicken Noodle!!");
+    
+    tastyFood.enqueue(generalTaos);
+    tastyFood.add(ramen);
+    
+    FoodItem removed = tastyFood.dequeue();
+    cout << "The item removed from the queue was: " << removed.getFoodName() << " and should be: Delicious Chinese Chicken Dish" << endl;
+    
+    tastyFood.add(macNCheese);
+    
+    FoodItem peeked = tastyFood.peek();
+    cout << "The item that was peeked from the queue was: " << peeked.getFoodName() << " and should be: Ramen" << endl;
+    
+    tastyFood.enqueue(soup);
+    
+    FoodItem actualRemoved = tastyFood.remove(2);
+    cout << "The item that was removed from the queue was: " << actualRemoved.getFoodName() << " and should be: Chicken Noodle!!" << endl;
+}
+
+void DataStructureController :: testFoodDouble()
+{
+    
+}
+
+void DataStructureController :: testFoodCircularList()
 {
     
 }

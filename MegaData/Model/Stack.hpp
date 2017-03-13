@@ -71,7 +71,7 @@ void Stack<Type> :: push(Type addedThing)
 template <class Type>
 Type Stack<Type> :: remove(int index)
 {
-    assert(index == this->getSize() -1 && this->getSize() > 0);
+    assert(index == this->getSize() - 1 && this->getSize() > 0);
     return pop();
 }
 
@@ -79,7 +79,7 @@ template <class Type>
 Type Stack<Type> :: peek()
 {
     assert(this->getSize() > 0);
-    return this->getEnd()->setNodeData();
+    return this->getEnd()->getNodeData();
 }
 
 template <class Type>
