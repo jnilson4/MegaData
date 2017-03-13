@@ -73,6 +73,11 @@ void DataStructureController :: testIntArray()
     }
 }
 
+void DataStructureController :: testStack()
+{
+    
+}
+
 void DataStructureController :: testListIntro()
 {
     List<int> sample;

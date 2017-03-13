@@ -33,6 +33,7 @@ private:
     void testListIntro();
     void testDoubleLists();
     void testListTiming();
+    void testStack();
 public:
     DataStructureController();
     void start();
