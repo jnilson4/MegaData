@@ -57,7 +57,7 @@ void Queue<Type> :: add(Type value)
 template <class Type>
 Type Queue<Type> :: remove(int index)
 {
-    assert(index == this->getSize() - 1 && this->getSize() > 0);
+    assert(index == 0 && this->getSize() > 0);
     return dequeue();
 }
 

@@ -85,10 +85,10 @@ void DataStructureController :: testFoodQueue()
     FoodItem peeked = tastyFood.peek();
     cout << "The item that was peeked from the queue was: " << peeked.getFoodName() << " and should be: Ramen. " << "The current size of the list is: " << tastyFood.getSize() << endl;
     
-    tastyFood.enqueue(soup);
+    tastyFood.add(soup);
     tastyFood.add(generalTaos);
     
-    FoodItem actualRemoved = tastyFood.remove(2);
+    FoodItem actualRemoved = tastyFood.remove(0);
     cout << "The item that was removed from the queue was: " << actualRemoved.getFoodName() << " and should be: Ramen. " << "The current size of the list is: " << tastyFood.getSize() << endl;
 }
 
