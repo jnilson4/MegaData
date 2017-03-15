@@ -19,8 +19,7 @@ DataStructureController :: DataStructureController()
 
 void DataStructureController :: start()
 {
-    testIntStack();
-    testFoodQueue();
+    testFoodDouble();
 }
 
 void DataStructureController :: testIntArray()
@@ -62,8 +61,18 @@ void DataStructureController :: testIntStack()
     
     cout << "The size of the stack is: " << numberStack.getSize() << " and should be 4." << endl;
     
-    numberStack.peek();
-    numberStack.remove(3);
+    int peeked = numberStack.peek();
+    
+    cout << "The number that was peeked was: " << peeked << " and should be: 87." << endl;
+    
+    numberStack.add(167);
+    numberStack.add(13);
+    
+    int removed = numberStack.remove(5);
+    
+    cout << "The number that was removed was: " << removed << " and should be: 13." << endl;
+    
+    cout << "The current size of the list is: " << numberStack.getSize() << " and should be: 6." << endl;
 }
 
 void DataStructureController :: testFoodQueue()
@@ -94,12 +103,29 @@ void DataStructureController :: testFoodQueue()
 
 void DataStructureController :: testFoodDouble()
 {
+    DoubleList<FoodItem> tastyFood;
+    FoodItem generalTaos("Delicious Chinese Chicken Dish");
+    FoodItem ramen("Ramen");
+    FoodItem macNCheese("Delicious pasta with cheese.");
+    FoodItem soup("Chicken Noodle!!");
     
+    tastyFood.add(generalTaos);
+    tastyFood.add(ramen);
+    tastyFood.add(macNCheese);
+    tastyFood.add(soup);
+    
+    FoodItem fromIndex = tastyFood.getFromIndex(3);
+    
+    cout << "The item from index 3 is: " << fromIndex.getFoodName() << " and should be: Chicken Noodle!!" << endl;
+    
+    FoodItem fromIndexFast = tastyFood.getFromIndexFast(1);
+    
+    cout << "The item from index 1 is: " << fromIndexFast.getFoodName() << " and should be: Ramen." << endl;
 }
 
 void DataStructureController :: testFoodCircularList()
 {
-    
+    CircularList<FoodItem> tastyFood;
 }
 
 void DataStructureController :: testListIntro()
@@ -158,4 +184,16 @@ void DataStructureController :: testListTiming()
     
     cout << "The average speed for the getFromIndex method was: " << averageSlow << " microseconds." << endl;
     cout << "The average speed for the getFromIndexFast method was: " << averageFast << " microseconds" << endl;
+}
+
+void DataStructureController :: testList()
+{
+    List<int> numbers;
+    
+    numbers.addFront(5);
+    numbers.addEnd(6);
+    numbers.addFront(20);
+    numbers.addFront(45897);
+    numbers.addFront(123);
+    numbers.addEnd(67);
 }

@@ -93,7 +93,7 @@ void CircularList<Type> :: add(Type data)
 template <class Type>
 Type CircularList<Type> :: remove(int index)
 {
-    asser(index >= 0 && index < this->getSize());
+    assert(index >= 0 && index < this->getSize());
     
     Type removedValue;
     
@@ -111,7 +111,7 @@ Type CircularList<Type> :: remove(int index)
         
         if(index == 0)
         {
-            this->setFront(this->getFront)->getNextPointer();
+            this->setFront(this->getFront()->getNextPointer());
         }
         else if(index == this->getSize() -1)
         {
