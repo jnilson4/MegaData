@@ -19,7 +19,7 @@ DataStructureController :: DataStructureController()
 
 void DataStructureController :: start()
 {
-    testFoodDouble();
+    testList();
 }
 
 void DataStructureController :: testIntArray()
@@ -118,14 +118,24 @@ void DataStructureController :: testFoodDouble()
     
     cout << "The item from index 3 is: " << fromIndex.getFoodName() << " and should be: Chicken Noodle!!" << endl;
     
+    tastyFood.remove(0);
     FoodItem fromIndexFast = tastyFood.getFromIndexFast(1);
     
-    cout << "The item from index 1 is: " << fromIndexFast.getFoodName() << " and should be: Ramen." << endl;
+    cout << "The item from index 1 is: " << fromIndexFast.getFoodName() << " and should be: Delicious pasta with cheese." << endl;
 }
 
 void DataStructureController :: testFoodCircularList()
 {
-    CircularList<FoodItem> tastyFood;
+    CircularList<int> tastyFood;
+    
+    for(int index = 0; index < 10; index++)
+    {
+        tastyFood.add(index);
+        cout << "The size of food are: " << tastyFood.getSize() << ", and should be " << (index + 1) << endl;
+    }
+    
+    int testRemove = tastyFood.getFromIndex(3);
+    cout << "The value from the list should be 3 and is: " << testRemove << endl;
 }
 
 void DataStructureController :: testListIntro()
@@ -196,4 +206,22 @@ void DataStructureController :: testList()
     numbers.addFront(45897);
     numbers.addFront(123);
     numbers.addEnd(67);
+    
+    cout << "The size of the list is: " << numbers.getSize() << " and should be: 6." << endl;
+    
+    int numberRemoved = numbers.remove(2);
+    
+    cout << "The number that was removed was: " << numberRemoved << " and should have been: 20" << endl;
+    cout << "The size of the list is: " << numbers.getSize() << " and should be: 5." << endl;
+    
+    numbers.addAtIndex(2, 234098);
+    
+    cout << "The number added at index 2 is: " << numbers.getFromIndex(2) << " and should be: 234098." << endl;
+    
+    numbers.setAtIndex(2, 1);
+    
+    cout << "The number that is now at index 2 is: " << numbers.getFromIndex(2) << " and should be: 1." << endl;
+    
+    cout << "The number 67 is contained in the list returns: " << numbers.contains(67) << " and should be 1." << endl;
 }
+

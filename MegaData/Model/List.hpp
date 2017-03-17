@@ -205,11 +205,12 @@ bool List<Type> :: contains(Type findMe)
     
     for(int index = 0; index < size; index++)
     {
-        if(current->getNodeData == findMe)
+        if(current->getNodeData() == findMe)
         {
             isInList = true;
             return isInList;
         }
+        current = current->getNextPointer();
     }
     
     return isInList;
