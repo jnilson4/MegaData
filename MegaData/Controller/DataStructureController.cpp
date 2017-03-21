@@ -19,7 +19,7 @@ DataStructureController :: DataStructureController()
 
 void DataStructureController :: start()
 {
-    testList();
+    testFoodCircularList();
 }
 
 void DataStructureController :: testIntArray()
@@ -134,8 +134,8 @@ void DataStructureController :: testFoodCircularList()
         cout << "The size of food are: " << tastyFood.getSize() << ", and should be " << (index + 1) << endl;
     }
     
-    int testRemove = tastyFood.getFromIndex(3);
-    cout << "The value from the list should be 3 and is: " << testRemove << endl;
+    int testGet = tastyFood.getFromIndex(1);
+    cout << "The value from the list should be 3 and is: " << testGet << endl;
 }
 
 void DataStructureController :: testListIntro()
