@@ -35,6 +35,8 @@
 		7F12E1D41E490F0800101CB0 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = "<group>"; };
 		7F12E1D51E490F0800101CB0 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
 		7F23CE8C1E9D537C007A3DD6 /* BinarySearchTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BinarySearchTreeNode.hpp; path = Model/BinarySearchTreeNode.hpp; sourceTree = "<group>"; };
+		7F23CE8F1E9D5B6F007A3DD6 /* BinarySearchTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BinarySearchTree.hpp; path = Model/BinarySearchTree.hpp; sourceTree = "<group>"; };
+		7F23CE901E9D5C93007A3DD6 /* Tree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Tree.hpp; path = Model/Tree.hpp; sourceTree = "<group>"; };
 		7F31F3F31E71E2C900762E7E /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = Model/Timer.cpp; sourceTree = "<group>"; };
 		7F31F3F41E71E2C900762E7E /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Model/Timer.hpp; sourceTree = "<group>"; };
 		7F35760D1E675D310033E913 /* DoublyLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoublyLinkedList.hpp; path = Model/DoublyLinkedList.hpp; sourceTree = "<group>"; };
@@ -111,11 +113,21 @@
 		7F12E1D31E49071F00101CB0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7F23CE8D1E9D58A8007A3DD6 /* Trees */,
 				7FF7F01B1E6A01CE00E15128 /* Tools */,
 				7FF7F01C1E6A01D400E15128 /* Linear Structures */,
 				7F35760C1E675CC90033E913 /* Node */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		7F23CE8D1E9D58A8007A3DD6 /* Trees */ = {
+			isa = PBXGroup;
+			children = (
+				7F23CE901E9D5C93007A3DD6 /* Tree.hpp */,
+				7F23CE8F1E9D5B6F007A3DD6 /* BinarySearchTree.hpp */,
+			);
+			name = Trees;
 			sourceTree = "<group>";
 		};
 		7F35760C1E675CC90033E913 /* Node */ = {
