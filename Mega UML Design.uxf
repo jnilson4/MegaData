@@ -455,13 +455,13 @@ lw=2</panel_attributes>
 + setRootChildPointer(BinarySearchTreeNode&lt;Type&gt; * root) : void
 + setLeftChildPointer(BinarySearchTreeNode&lt;Type&gt; * root) : void
 + setRightChildPointer(BinarySearchTreeNode&lt;Type&gt; * root) : void
-bg=magenta</panel_attributes>
+bg=#9518AD</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>120</x>
+      <x>108</x>
       <y>516</y>
       <w>276</w>
       <h>186</h>
@@ -492,7 +492,7 @@ bg=gray</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>216</x>
+      <x>234</x>
       <y>744</y>
       <w>306</w>
       <h>180</h>
@@ -515,31 +515,32 @@ bg=gray</panel_attributes>
 
 - inOrderTraversal(BinarySearchTreeNode&lt;Type&gt; *) : void
 - preOrderTraversal(BinarySearchTreeNode&lt;Type&gt; *) : void
-- postOrderTraversal(BinarySearchTreeNode&lt;Type&gt; *) : void</panel_attributes>
+- postOrderTraversal(BinarySearchTreeNode&lt;Type&gt; *) : void
+bg=magenta</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>240</x>
+      <x>228</x>
       <y>696</y>
-      <w>30</w>
+      <w>180</w>
       <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m2=0..n</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;260.0;50.0;260.0;80.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>360</x>
+      <x>378</x>
       <y>696</y>
-      <w>192</w>
+      <w>174</w>
       <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>300.0;10.0;300.0;50.0;10.0;50.0;10.0;80.0</additional_attributes>
+    <additional_attributes>270.0;10.0;270.0;50.0;10.0;50.0;10.0;80.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
