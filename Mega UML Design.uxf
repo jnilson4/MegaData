@@ -435,7 +435,7 @@ lw=2</panel_attributes>
       <x>402</x>
       <y>516</y>
       <w>288</w>
-      <h>186</h>
+      <h>168</h>
     </coordinates>
     <panel_attributes>BinarySearchTreeNode&lt;Type&gt;
 --
@@ -535,12 +535,12 @@ m2=0..n</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>378</x>
-      <y>696</y>
+      <y>678</y>
       <w>174</w>
-      <h>60</h>
+      <h>78</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>270.0;10.0;270.0;50.0;10.0;50.0;10.0;80.0</additional_attributes>
+    <additional_attributes>270.0;10.0;270.0;80.0;10.0;80.0;10.0;110.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -551,6 +551,6 @@ m2=0..n</panel_attributes>
       <h>84</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>910.0;10.0;910.0;70.0;10.0;80.0;10.0;120.0</additional_attributes>
+    <additional_attributes>910.0;10.0;910.0;70.0;10.0;70.0;10.0;120.0</additional_attributes>
   </element>
 </diagram>
