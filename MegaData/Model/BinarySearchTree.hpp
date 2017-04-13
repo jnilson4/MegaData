@@ -114,6 +114,41 @@ void BinarySearchTree<Type> :: postOrderTraversal(BinarySearchTreeNode<Type> * p
 }
 
 template <class Type>
+void BinarySearchTree<Type> :: demoTraversalSteps(BinarySearchTreeNode<Type> * node)
+{
+    
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: contains(Type value)
+{
+    BinarySearchTreeNode<Type> * current = root;
+    if(current == nullptr)
+    {
+        return false;
+    }
+    else
+    {
+        while(current != nullptr)
+        {
+            if(itemToFind == current->getNodeData())
+            {
+                return true;
+            }
+            else if(itemToFind < current->getNodeData())
+            {
+                current = current->getLeftChild();
+            }
+            else
+            {
+                current = current->getRightChild();
+            }
+        }
+        return false;
+    }
+}
+
+template <class Type>
 void BinarySearchTree<Type> :: insert(Type itemToInsert)
 {
     BinarySearchTreeNode<Type> * insertMe = new BinarySearchTreeNode<Type>(itemToInsert);
@@ -157,4 +192,72 @@ void BinarySearchTree<Type> :: insert(Type itemToInsert)
     }
 }
 
+template <class Type>
+void BinarySearchTree<Type> remove(Type getRidOfMe)
+{
+    if(root == nullptr)
+    {
+        cout << "Empty tree so removal is not possible" << endl;
+    }
+    else
+    {
+        BinarySearchTreeNode<Type> * current = root;
+        BinarySearchTreeNode<Type> * previous = nullptr;
+        bool hasBeenFound = false;
+        
+        while(current != nullptr && !hasBeenFound)
+        {
+            if(current->getNodeData() == getRidOfMe)
+            {
+                hasBeenFound = true;
+            }
+            else
+            {
+                previous = current;
+                if(getRidOfMe < current->getNodeData())
+                {
+                    current = current->getLeftChild();
+                }
+                else
+                {
+                    current = current->getRightChild();
+                }
+            }
+        }
+        
+        if(current == nullptr)
+        {
+            cerr << "Item not found, removal unsucessful" << endl;
+        }
+        else if(hasBeenFound)
+        {
+            if(current == root)
+            {
+                removeNode(root);
+            }
+            else if(getRidOfMe < previous->getNodeData())
+            {
+                removeNode(previous->getLeftChild());
+            }
+            else
+            {
+                removeNode(previous->getRightChild());
+            }
+        }
+    }
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: removeNode(BinarySearchTreeNode<Type> * & removeMe)
+{
+    
+}
+
 #endif /* BinarySearchTree_h */
+
+
+
+
+
+
+
