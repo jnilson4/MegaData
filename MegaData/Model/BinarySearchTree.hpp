@@ -11,6 +11,8 @@
 
 #include "Tree.hpp"
 #include "BinarySearchTreeNode.hpp"
+#include <iostream>
+using namespace std;
 
 template <class Type>
 class BinarySearchTree : public Tree<Type>
@@ -23,6 +25,8 @@ private:
     void preOrderTraversal(BinarySearchTreeNode<Type> * preStart);
     void postOrderTraversal(BinarySearchTreeNode<Type> * postStart);
     
+    void removeNode(BinarySearchTree<Type> * & removeMe);
+    
 public:
     BinarySearchTree();
     ~BinarySearchTree();
@@ -33,6 +37,14 @@ public:
     void inOrderTraversal();
     void preOrderTraversal();
     void postOrderTraversal();
+    
+    void printToFile();
+    
+//    void demoTraversalSteps(BinarySearchTreeNode<Type> * node);
+    
+    bool contains(Type value);
+    void insert(Type itemToInsert);
+    void remove(Type value);
 };
 
 template <class Type>
