@@ -54,6 +54,12 @@ BinarySearchTree<Type> :: BinarySearchTree() : Tree<Type>()
 }
 
 template <class Type>
+BinarySearchTree<Type> :: ~BinarySearchTree()
+{
+    
+}
+
+template <class Type>
 BinarySearchTree<Type> :: BinarySearchTree<Type> :: getRoot()
 {
     return this->root;
@@ -105,6 +111,50 @@ template <class Type>
 void BinarySearchTree<Type> :: postOrderTraversal(BinarySearchTreeNode<Type> * postStart)
 {
     
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: insert(Type itemToInsert)
+{
+    BinarySearchTreeNode<Type> * insertMe = new BinarySearchTreeNode<Type>(itemToInsert);
+    BinarySearchTreeNode<Type> * previous = nullptr;
+    BinarySearchTreeNode<Type> * current = root;
+    
+    if(current == nullptr)
+    {
+        root = insertMe;
+    }
+    else
+    {
+        while(current != nullptr)
+        {
+            previous = current;
+            if(itemToInsert < current->getNodeData())
+            {
+                current = current->getLeftChild();
+            }
+            else if(itemToInsert > current->getNodeData())
+            {
+                current = current->getRightChild();
+            }
+            else
+            {
+                cerr << "Item exists already - Exiting" << endl;
+                delete insertMe;
+                return;
+            }
+        }
+        
+        if(previous->getNodeData() > itemToInsert)
+        {
+            previous->setLeftChild(insertMe);
+        }
+        else
+        {
+            previous->setRightChild(inserMe);
+        }
+        insertMe->setRootPointer(previous);
+    }
 }
 
 #endif /* BinarySearchTree_h */
