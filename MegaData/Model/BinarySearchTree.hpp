@@ -46,8 +46,8 @@ public:
     
     int getSize();
     int getHeight();
-    int isComplete();
-    int isBalanced();
+    bool isComplete();
+    bool isBalanced();
     
     bool contains(Type value);
     void insert(Type itemToInsert);
@@ -63,11 +63,11 @@ BinarySearchTree<Type> :: BinarySearchTree() : Tree<Type>()
 template <class Type>
 BinarySearchTree<Type> :: ~BinarySearchTree()
 {
-    
+    delete root;
 }
 
 template <class Type>
-void BinarySearchTree<Type> :: BinarySearchTreeNode<Type> :: getRoot()
+void BinarySearchTree<Type> * :: BinarySearchTreeNode<Type> :: getRoot()
 {
     return this->root;
 }
@@ -430,13 +430,13 @@ int BinarySearchTree<Type> :: getHeight()
 }
 
 template <class Type>
-int BinarySearchTree<Type> :: isBalanced()
+bool BinarySearchTree<Type> :: isBalanced()
 {
     return isBalanced(root);
 }
 
 template <class Type>
-int BinarySearchTree<Type> :: isComplete()
+bool BinarySearchTree<Type> :: isComplete()
 {
     return isComplete(root);
 }
