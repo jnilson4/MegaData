@@ -17,15 +17,19 @@ using namespace std;
 template <class Type>
 class BinarySearchTree : public Tree<Type>
 {
-private:
+protected:
     BinarySearchTreeNode<Type> * root;
     
     int calculateSize(BinarySearchTreeNode<Type> * root);
+    int calculateHeight(BinarySearhcTreeNode<Type> * root);
+    bool isBalanced(BinarySearchTreeNode<Type> * root);
+    bool isComplete(BinarySearchTreeNode<Type> * root);
+    
     void inOrderTraversal(BinarySearchTreeNode<Type> * inStart);
     void preOrderTraversal(BinarySearchTreeNode<Type> * preStart);
     void postOrderTraversal(BinarySearchTreeNode<Type> * postStart);
     
-    void removeNode(BinarySearchTree<Type> * & removeMe);
+    void removeNode(BinarySearchTree<Type> * removeMe);
     
 public:
     BinarySearchTree();
@@ -38,9 +42,12 @@ public:
     void preOrderTraversal();
     void postOrderTraversal();
     
-    void printToFile();
+    void demoTraversalSteps(BinarySearchTreeNode<Type> * node);
     
-//    void demoTraversalSteps(BinarySearchTreeNode<Type> * node);
+    int getSize();
+    int getHeight();
+    int isComplete();
+    int isBalanced();
     
     bool contains(Type value);
     void insert(Type itemToInsert);
