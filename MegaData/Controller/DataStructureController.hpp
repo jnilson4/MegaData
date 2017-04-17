@@ -19,6 +19,7 @@
 #include "../Model/Queue.hpp"
 #include "../Model/CircularList.hpp"
 #include "../Model/FoodItem.hpp"
+#include "../Model/BinarySearchTree.hpp"
 #include <string>
 
 using namespace std;
@@ -34,6 +35,7 @@ private:
     void testListIntro();
     void testListTiming();
     void testList();
+    void testBinarySearchTreeOperations();
 public:
     DataStructureController();
     void start();
