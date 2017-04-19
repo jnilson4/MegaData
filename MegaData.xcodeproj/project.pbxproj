@@ -31,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		7F019A691E64C70400C84898 /* BiDirectionalNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BiDirectionalNode.hpp; path = Model/BiDirectionalNode.hpp; sourceTree = "<group>"; };
+		7F0EC6D01EA7EE9900178E2F /* AVLTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = AVLTree.hpp; path = Model/AVLTree.hpp; sourceTree = "<group>"; };
 		7F12E1C81E49046400101CB0 /* MegaData */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaData; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F12E1D41E490F0800101CB0 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = "<group>"; };
 		7F12E1D51E490F0800101CB0 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
@@ -126,6 +127,7 @@
 			children = (
 				7F23CE901E9D5C93007A3DD6 /* Tree.hpp */,
 				7F23CE8F1E9D5B6F007A3DD6 /* BinarySearchTree.hpp */,
+				7F0EC6D01EA7EE9900178E2F /* AVLTree.hpp */,
 			);
 			name = Trees;
 			sourceTree = "<group>";
