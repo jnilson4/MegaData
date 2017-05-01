@@ -57,6 +57,7 @@
 		7FBBB3FF1E8C2994007E7998 /* FileController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileController.cpp; path = Controller/FileController.cpp; sourceTree = "<group>"; };
 		7FBBB4041E8C34EB007E7998 /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CrimeData.cpp; path = Model/CrimeData.cpp; sourceTree = "<group>"; };
 		7FBBB4051E8C34EB007E7998 /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CrimeData.hpp; path = Model/CrimeData.hpp; sourceTree = "<group>"; };
+		7FF5787E1EB7B2A800DD65B9 /* HashTable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = HashTable.hpp; path = Model/HashTable.hpp; sourceTree = "<group>"; };
 		7FF7F01F1E6A026200E15128 /* DoubleList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoubleList.hpp; path = Model/DoubleList.hpp; sourceTree = "<group>"; };
 		7FF7F0201E6A026E00E15128 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Stack.hpp; path = Model/Stack.hpp; sourceTree = "<group>"; };
 		7FF7F0211E6A027D00E15128 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Queue.hpp; path = Model/Queue.hpp; sourceTree = "<group>"; };
@@ -118,6 +119,7 @@
 				7FF7F01B1E6A01CE00E15128 /* Tools */,
 				7FF7F01C1E6A01D400E15128 /* Linear Structures */,
 				7F35760C1E675CC90033E913 /* Node */,
+				7FF5787E1EB7B2A800DD65B9 /* HashTable.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
