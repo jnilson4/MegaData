@@ -19,7 +19,7 @@ DataStructureController :: DataStructureController()
 
 void DataStructureController :: start()
 {
-    testHashTable();
+    testBinarySearchTreeOperations();
 }
 
 void DataStructureController :: testIntArray()
@@ -264,6 +264,12 @@ void DataStructureController :: testBinarySearchTreeOperations()
     
     cout << "Balanced should be false || 0 and is: " << numbers.isBalanced() << endl;
     
+    numbers.preOrderTraversal();
+    
+    numbers.remove(43243);
+    
+    numbers.postOrderTraversal();
+    
 }
 
 void DataStructureController :: testHashTable()
@@ -284,7 +290,7 @@ void DataStructureController :: testHashTable()
     
     cout << "The size of numbers is: " << numbers.getSize() << " and should be 5." << endl;
     
-    cout << "Contains: " << numbers.contains() << endl;
+//    cout << "Contains: " << numbers.contains() << endl;
     
     numbers.add(890);
     
