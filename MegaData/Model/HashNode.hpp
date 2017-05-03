@@ -44,7 +44,7 @@ long HashNode<Type> :: getKey() const
 }
 
 template <class Type>
-Type HashNode<Type> :; getData()
+Type HashNode<Type> :: getData()
 {
     return this->data;
 }

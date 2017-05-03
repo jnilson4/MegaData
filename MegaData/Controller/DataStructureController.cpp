@@ -19,7 +19,7 @@ DataStructureController :: DataStructureController()
 
 void DataStructureController :: start()
 {
-    testFoodCircularList();
+    testHashTable();
 }
 
 void DataStructureController :: testIntArray()
@@ -236,6 +236,8 @@ void DataStructureController :: testBinarySearchTreeOperations()
     
     numbers.insert(43);
     
+    cout << "The size is: " << numbers.getSize() << " and should be: 3." << endl;
+    
     numbers.insert(-123);
     
     numbers.insert(23465);
@@ -243,6 +245,8 @@ void DataStructureController :: testBinarySearchTreeOperations()
     numbers.insert(10); // won't go in
     
     numbers.insert(43243);
+    
+    cout << "The size is: " << numbers.getSize() << " and should be: 6." << endl;
     
     numbers.insert(-45677654);
     
@@ -260,4 +264,37 @@ void DataStructureController :: testBinarySearchTreeOperations()
     
     cout << "Balanced should be false || 0 and is: " << numbers.isBalanced() << endl;
     
+}
+
+void DataStructureController :: testHashTable()
+{
+    HashTable<int> numbers;
+    
+    numbers.add(123);
+    
+    cout << "The size of numbers is: " << numbers.getSize() << " and should be 1." << endl;
+    
+    numbers.add(87435);
+    
+    numbers.add(757);
+    
+    numbers.add(883);
+    
+    numbers.add(102);
+    
+    cout << "The size of numbers is: " << numbers.getSize() << " and should be 5." << endl;
+    
+    cout << "Contains: " << numbers.contains() << endl;
+    
+    numbers.add(890);
+    
+    numbers.add(00);
+    
+    numbers.add(453);
+    
+    numbers.add(891);
+    
+    numbers.add(78);
+    
+    cout << "The size of numbers is: " << numbers.getSize() << " and should be: 10" << endl;
 }

@@ -24,13 +24,14 @@ private:
     HashNode<Type> * * hashTableStorage;
     bool isPrime(long sampleNumber);
     void resize();
-    long nextPrime(long current);
+    long nextPrime();
     long findPosition(HashNode<Type> * data);
     long handleCollision(HashNode<Type> * data, long currentPosition);
 public:
     HashTable();
     ~HashTable();
     void add(Type data);
+    bool remove(Type data);
     void displayContents();
     int getSize();
 };
@@ -41,7 +42,7 @@ HashTable<Type> :: HashTable()
     this->capacity = 101;
     this->efficiencyPercentage = .667;
     this->size = 0;
-    this->hasTableStorage = HashNode<Type> * [capaciyty];
+    this->hashTableStorage = new HashNode<Type> * [capacity];
 }
 
 template <class Type>
@@ -53,7 +54,7 @@ HashTable<Type> :: ~HashTable()
 template <class Type>
 long HashTable<Type> :: nextPrime()
 {
-    int nextPrime = (this->capacity * 2) + 1;
+    long nextPrime = (this->capacity * 2) + 1;
     
     while(!isPrime(nextPrime))
     {
@@ -80,7 +81,7 @@ bool HashTable<Type> :: isPrime(long candidateNumber)
     }
     else
     {
-        for(int next = 3; nex <= sqrt(candidateNumber) + 1; next += 2)
+        for(int next = 3; next <= sqrt(candidateNumber) + 1; next += 2)
         {
             if(candidateNumber % next == 0)
             {
@@ -126,7 +127,7 @@ void HashTable<Type> :: displayContents()
     {
         if(hashTableStorage[index] != nullptr)
         {
-            cout << index << ": " << hashTable[index]->getData() << ", " << endl;
+            cout << index << ": " << hashTableStorage[index]->getData() << ", " << endl;
         }
     }
 }
@@ -155,14 +156,14 @@ void HashTable<Type> :: resize()
     long updatedCapacity = nextPrime();
     HashNode<Type> * * tempStorage = new HashNode<Type> * [updatedCapacity];
     
-    std :: fill_n(tempStorage, updatedCapacity, nullptr)
+    std :: fill_n(tempStorage, updatedCapacity, nullptr);
     
     long oldCapacity = this->capacity;
     this->capacity = updatedCapacity;
     
     for(long index = 0; index < oldCapacity; index++)
     {
-        if(hashTableStorage[index] =! nullptr)
+        if(hashTableStorage[index] != nullptr)
         {
             HashNode<Type> * temp = hashTableStorage[index];
             

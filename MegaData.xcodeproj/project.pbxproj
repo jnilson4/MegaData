@@ -120,8 +120,6 @@
 				7FF7F01B1E6A01CE00E15128 /* Tools */,
 				7FF7F01C1E6A01D400E15128 /* Linear Structures */,
 				7F35760C1E675CC90033E913 /* Node */,
-				7FF5787E1EB7B2A800DD65B9 /* HashTable.hpp */,
-				7FF5787F1EB7B52700DD65B9 /* HashNode.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -146,6 +144,7 @@
 				7F92E4251E523E8F002413DB /* Node.hpp */,
 				7F019A691E64C70400C84898 /* BiDirectionalNode.hpp */,
 				7F23CE8C1E9D537C007A3DD6 /* BinarySearchTreeNode.hpp */,
+				7FF5787F1EB7B52700DD65B9 /* HashNode.hpp */,
 			);
 			name = Node;
 			sourceTree = "<group>";
@@ -174,6 +173,7 @@
 		7FF7F01C1E6A01D400E15128 /* Linear Structures */ = {
 			isa = PBXGroup;
 			children = (
+				7FF5787E1EB7B2A800DD65B9 /* HashTable.hpp */,
 				7FF7F01D1E6A01ED00E15128 /* Typed Data Structures */,
 				7FF7F01E1E6A020700E15128 /* Inherits from DoublyLinked */,
 			);

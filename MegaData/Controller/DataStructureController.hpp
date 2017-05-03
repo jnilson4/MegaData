@@ -20,6 +20,7 @@
 #include "../Model/CircularList.hpp"
 #include "../Model/FoodItem.hpp"
 #include "../Model/BinarySearchTree.hpp"
+#include "../Model/HashTable.hpp"
 #include <string>
 
 using namespace std;
@@ -36,6 +37,7 @@ private:
     void testListTiming();
     void testList();
     void testBinarySearchTreeOperations();
+    void testHashTable();
 public:
     DataStructureController();
     void start();
