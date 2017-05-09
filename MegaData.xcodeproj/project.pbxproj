@@ -62,6 +62,7 @@
 		7FF7F01F1E6A026200E15128 /* DoubleList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoubleList.hpp; path = Model/DoubleList.hpp; sourceTree = "<group>"; };
 		7FF7F0201E6A026E00E15128 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Stack.hpp; path = Model/Stack.hpp; sourceTree = "<group>"; };
 		7FF7F0211E6A027D00E15128 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Queue.hpp; path = Model/Queue.hpp; sourceTree = "<group>"; };
+		7FF98DF91EC2350100EA179A /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Graph.hpp; path = Model/Graph.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +121,7 @@
 				7FF7F01B1E6A01CE00E15128 /* Tools */,
 				7FF7F01C1E6A01D400E15128 /* Linear Structures */,
 				7F35760C1E675CC90033E913 /* Node */,
+				7FF98DF91EC2350100EA179A /* Graph.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
