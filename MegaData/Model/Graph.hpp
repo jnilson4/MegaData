@@ -34,7 +34,7 @@ public:
     Type operator [] (int vertex) const;
     int size() const;
     bool areConnected(int source, int target)const;
-    void hasUndirectedConncection(int source, int target)const;
+    bool hasUndirectedConncection(int source, int target)const;
     std::set<int> neighbors(int vertex) const;
     void depthFirstTraversal(Graph<Type> graph, int vertex);
     void breadthFirstTraversal(Graph<Type> graph, int vertex);
@@ -47,14 +47,13 @@ const int Graph<Type> :: MAXIMUM;
 template <class Type>
 Graph<Type> :: Graph()
 {
-    this->vertexCount = 0;0
+    this->vertexCount = 0;
 }
 
 template <class Type>
 Graph<Type> :: ~Graph()
 {
-    delete [] this->adjacencyMatrix;
-    delete [] this->graphData;
+    
 }
 
 template <class Type>
@@ -70,7 +69,7 @@ void Graph<Type> :: addVertex(const Type& value)
     int newVertexNumber = vertexCount;
     vertexCount++;
     
-    for(int otherVertexNumber = 0; otherVertexNumber < vertextCount; otherVertexNumber++)
+    for(int otherVertexNumber = 0; otherVertexNumber < vertexCount; otherVertexNumber++)
     {
         adjacencyMatrix[otherVertexNumber][newVertexNumber] = false;
         adjacencyMatrix[newVertexNumber][otherVertexNumber] = false;
@@ -80,7 +79,7 @@ void Graph<Type> :: addVertex(const Type& value)
 }
 
 template <class Type>
-void Graph<Type> :: hasUndirectedConnection(int source, int target) const
+bool Graph<Type> :: hasUndirectedConncection(int source, int target) const
 {
     assert(source < size() && target < size());
     
@@ -157,17 +156,17 @@ void Graph<Type> :: depthFirstTraversal(Graph<Type> currentGraph, int vertex)
 template <class Type>
 void Graph<Type> :: depthFirstTraversal(Graph<Type> currentGraph, int vertex, bool * visited)
 {
-    std::set<int> connections = currentGraph.neightbors(vertex);
+    std::set<int> connections = currentGraph.neighbors(vertex);
     std::set<int>::iterator setItereator;
     
     visited[vertex] = true;
     cout << currentGraph[vertex] << ", " << endl;
     
-    for(setIterator = connections.begin(); setIterator != connections.end(); setIterator++)
+    for(setItereator = connections.begin(); setItereator != connections.end(); setItereator++)
     {
-        if(!visited[*setIterator])
+        if(!visited[*setItereator])
         {
-            depthFirstTraversal(currentGraph, *setIterator, visited);
+            depthFirstTraversal(currentGraph, *setItereator, visited);
         }
     }
 }
@@ -190,7 +189,7 @@ void Graph<Type> :: breadthFirstTraversal(Graph<Type> currentGraph, int vertex)
         connections = currentGraph.neighbors(vertexQueue.front());
         vertexQueue.pop();
         \
-        for(setIterator = connections.beging(); setIterator != connections.end(); setIterator++)
+        for(setIterator = connections.begin(); setIterator != connections.end(); setIterator++)
         {
             if(!visited[*setIterator])
             {

@@ -19,7 +19,7 @@ DataStructureController :: DataStructureController()
 
 void DataStructureController :: start()
 {
-    testBinarySearchTreeOperations();
+    testGraph();
 }
 
 void DataStructureController :: testIntArray()
@@ -303,4 +303,23 @@ void DataStructureController :: testHashTable()
     numbers.add(78);
     
     cout << "The size of numbers is: " << numbers.getSize() << " and should be: 10" << endl;
+}
+
+void DataStructureController :: testGraph()
+{
+    Graph<string> connectWords;
+    
+    connectWords.addVertex("Programming");
+    connectWords.addVertex("Photography");
+    connectWords.addVertex("Mustangs");
+    connectWords.addVertex("Family");
+    connectWords.addVertex("Church");
+    
+    connectWords.addEdge(0,1);
+    connectWords.addEdge(0,2);
+    connectWords.addEdge(0,3);
+    connectWords.addEdge(0,4);
+    
+    connectWords.breadthFirstTraversal(connectWords, 1);
+    connectWords.depthFirstTraversal(connectWords, 2);
 }

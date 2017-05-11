@@ -21,6 +21,7 @@
 #include "../Model/FoodItem.hpp"
 #include "../Model/BinarySearchTree.hpp"
 #include "../Model/HashTable.hpp"
+#include "../Model/Graph.hpp"
 #include <string>
 
 using namespace std;
@@ -38,6 +39,7 @@ private:
     void testList();
     void testBinarySearchTreeOperations();
     void testHashTable();
+    void testGraph();
 public:
     DataStructureController();
     void start();
